@@ -7,4 +7,4 @@ require (
 	github.com/micro/go-micro v1.18.0
 )
 
-replace GoMicroStudy/01practices/basic/01micro-service/proto => F:\goPath\src\GoMicroStudy\01practices\basic\proto
+replace GoMicroStudy/01practices/basic/01micro-service/proto => F:\goPath\src\GoMicroStudy\01practices\basic\01micro-service\proto

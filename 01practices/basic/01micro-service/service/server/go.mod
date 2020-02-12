@@ -9,4 +9,4 @@ require (
 	github.com/micro/micro/v2 v2.0.0 // indirect
 )
 
-replace GoMicroStudy/01practices/basic/01micro-service/proto => F:\goPath\src\GoMicroStudy\01practices\basic\proto
+replace GoMicroStudy/01practices/basic/01micro-service/proto => F:\goPath\src\GoMicroStudy\01practices\basic\01micro-service\proto
