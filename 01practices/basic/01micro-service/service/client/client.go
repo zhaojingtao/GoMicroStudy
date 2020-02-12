@@ -11,7 +11,7 @@ import (
 
 func main() {
 	register := etcd.NewRegistry(func(options *registry.Options) {
-		options.Addrs = []string{"106.12.118.76:237"}
+		options.Addrs = []string{"106.12.118.76:2379"}
 	})
 	service := micro.NewService(
 		micro.Name("com.client.greeter"),

@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+service Example{
+    rpc Call(CallRequest)returns(CallResponse){};
+}
+
+ser
