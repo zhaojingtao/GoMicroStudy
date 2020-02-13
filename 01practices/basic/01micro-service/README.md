@@ -1,27 +1,19 @@
 # Service
 
-本篇演示如何使用Service。
+Micro中有两种服务类型，一种是就是普通常见的服务，这里就叫service，另一种叫function，它是只响应一次请求的service，响应后便会从注册中心卸载。
 
 ## 内容
 
-- main.go - 服务端
-- client.go - 客户端
-- hello_test.go - 单元测试示例
+- [service](./service) 介绍如何使用service
+- [function](./function) 介绍如何使用function
+- [proto](./proto) 原型文件、类与接口文档
 
-## 运行
-使用protoc生成相应的代码
-```
-protoc --go_out=. --micro_out=. proto/greeter.proto
-```
+## 预备动作
 
-运行服务端
+- 生成proto原型类与接口（已生成，可根据自身情况重新生成）
 
-```shell
-go run server.go
-```
+我们已经预定义好了一个小示例接口原型**greeter.proto**，请切换到其所在目录，然后执行以下命令，该命令会在所在目录下生成类和接口文件。
 
-运行客户端
-
-```shell
-go run client.go
+```bash
+$ protoc --proto_path=$GOPATH/src:. --micro_out=. --go_out=. greeter.proto
 ```
